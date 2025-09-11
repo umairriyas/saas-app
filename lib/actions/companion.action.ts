@@ -135,7 +135,7 @@ export const getRecentSessions = async () => {
     .select(`companions:companion_id (*)`)
     .eq('user_id', userId)
     .order('created_at', { ascending: false })
-    .limit(5);
+    .limit(3);
 
   if (error) throw new Error(error.message);
 
@@ -189,7 +189,7 @@ export const newCompanionPermissions = async () => {
   } else if (has({ feature: '3_companion_limit' })) {
     limit = 3;
   } else if (has({ feature: '10_companion_limit' })) {
-    limit = 20;
+    limit = 30;
   }
 
   const { data, error } = await supabase

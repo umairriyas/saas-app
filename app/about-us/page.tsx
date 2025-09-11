@@ -55,7 +55,7 @@ const AboutUs = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-900 mb-4"
           >
-            Watch How Dixi Transforms Education
+            Watch How Dixi Transforms Education goes
           </motion.h2>
           <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-2xl mx-auto">
             <video
