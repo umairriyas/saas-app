@@ -6,6 +6,7 @@ export const subjects = [
   "coding",
   "economics",
   "commerce",
+   "Software Engineer Intern Interview Practise",
 ];
 
 export const subjectsColors = {
