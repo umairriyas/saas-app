@@ -43,14 +43,17 @@ const Hero = () => {
 
               {/* Buttons - Hidden on smallest screens */}
               <div className="hidden md:flex flex-col gap-2 lg:gap-3">
-                <button className="bg-black text-white px-3 py-1.5 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-lg lg:rounded-xl font-medium hover:bg-gray-800 transition-all duration-300 shadow-lg text-[10px] md:text-xs lg:text-sm">
-                  Launch Now
-                </button>
+                <a
+                  href="/companions/new"
+                  className="bg-black text-white px-3 py-1.5 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-lg lg:rounded-xl font-medium hover:bg-gray-800 transition-all duration-300 shadow-lg text-[10px] md:text-xs lg:text-sm text-center"
+                >
+                  Start Now
+                </a>
+
                 <button className="border border-black text-black px-3 py-1.5 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-lg lg:rounded-xl font-medium hover:bg-black hover:text-white transition-all duration-300 text-[10px] md:text-xs lg:text-sm">
                   Learn More
                 </button>
               </div>
-
               {/* Left Stats */}
               <div className="pt-1 sm:pt-2 md:pt-3 lg:pt-4 space-y-1 sm:space-y-2 md:space-y-3">
                 <div className="flex items-center gap-1 sm:gap-2">

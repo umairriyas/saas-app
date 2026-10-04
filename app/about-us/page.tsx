@@ -634,6 +634,55 @@ const AboutUs = () => {
               </div>
             </motion.div>
 
+            {/* Founder Section */}
+            <motion.section
+              id="founder"
+              aria-labelledby="founder-heading"
+              className="mb-24"
+              initial="hidden"
+              whileInView="visible"
+              variants={containerVariants}
+              viewport={{ once: true }}
+            >
+              <motion.h2
+                id="founder-heading"
+                className="mb-12 text-center text-4xl font-bold sm:text-5xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+                variants={itemVariants}
+              >
+                Meet Our Founder
+              </motion.h2>
+
+              <motion.div
+                className="mx-auto max-w-4xl rounded-2xl border border-white/10 bg-gradient-to-r from-white/10 to-white/5 p-6 backdrop-blur-sm sm:p-10"
+                variants={itemVariants}
+              >
+                <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:gap-8 sm:text-left">
+                  {/* Initials avatar — no photo required */}
+                  <div
+                    aria-hidden="true"
+                    className="flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 text-4xl font-bold text-white shadow-lg sm:h-28 sm:w-28"
+                  >
+                    UR
+                  </div>
+
+                  <div className="min-w-0">
+                    <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-blue-300">
+                      Founder of Dixi
+                    </p>
+                    <h3 className="mb-4 text-2xl font-bold text-white sm:text-3xl">
+                      Umair Riyas
+                    </h3>
+                    <p className="text-base leading-relaxed text-gray-200 sm:text-lg">
+                      Umair Riyas is the founder of Dixi, an AI-powered learning
+                      companion for students in Sri Lanka, focused on
+                      personalised tutoring and voice-assisted learning
+                      experiences.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.section>
+
             {/* Team Section */}
             <motion.div
               className="mb-24"

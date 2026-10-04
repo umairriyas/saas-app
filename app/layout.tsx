@@ -10,8 +10,14 @@ const bricolage = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "Dixi",
-  description: "Real-time AI Teaching Platform",
+  title: {
+    default: "AI Tutor in Sri Lanka | Personalised Learning | Dixi",
+    template: "%s | Dixi",
+  },
+
+  description:
+    "Looking for the best AI tutor in Sri Lanka? Try Dixi for personalised AI tutoring, voice-assisted learning and real-time study support at your own pace.",
+
   icons: {
     icon: "/logo-2.png",
   },
@@ -25,7 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bricolage.variable} antialiased`}>
-        <ClerkProvider appearance={{ variables: { colorPrimary: "#fe5933" } }}>
+        <ClerkProvider
+          appearance={{
+            variables: {
+              colorPrimary: "#fe5933",
+            },
+          }}
+        >
           <Navbar />
           {children}
         </ClerkProvider>
