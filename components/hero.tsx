@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import React from "react";
 import Image from "next/image";
@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="absolute top-1/4 left-1/4 w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-gradient-to-br from-blue-400/10 to-purple-400/10 rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 bg-gradient-to-br from-purple-400/10 to-pink-400/10 rounded-full blur-2xl sm:blur-3xl animate-pulse delay-1000"></div>
 
-        {/* LEFT CORNER TEXT - Fully Responsive */}
+        {/* LEFT CORNER TEXT */}
         <div className="absolute top-2 left-2 sm:top-4 sm:left-4 md:top-6 md:left-6 lg:top-12 lg:left-12 xl:top-16 xl:left-16 z-30 max-w-[140px] sm:max-w-[180px] md:max-w-xs lg:max-w-sm">
           <div className="bg-white/95 backdrop-blur-sm p-2 sm:p-3 md:p-4 lg:p-6 xl:p-8 rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg sm:shadow-xl md:shadow-2xl border border-gray-100">
             <div className="space-y-1 sm:space-y-2 md:space-y-3 lg:space-y-4">
@@ -26,7 +26,7 @@ const Hero = () => {
 
               {/* Headline */}
               <h1 className="text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 leading-tight">
-                Sri Lanka's First <br className="hidden sm:block" />
+                Sri Lanka&apos;s First <br className="hidden sm:block" />
                 <span className="block sm:inline">AI-Powered</span>
                 <br />
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -41,7 +41,7 @@ const Hero = () => {
                 Experience the future of education with intelligent tutoring.
               </p>
 
-              {/* Buttons - Hidden on smallest screens */}
+              {/* Desktop Buttons */}
               <div className="hidden md:flex flex-col gap-2 lg:gap-3">
                 <a
                   href="/companions/new"
@@ -54,6 +54,7 @@ const Hero = () => {
                   Learn More
                 </button>
               </div>
+
               {/* Left Stats */}
               <div className="pt-1 sm:pt-2 md:pt-3 lg:pt-4 space-y-1 sm:space-y-2 md:space-y-3">
                 <div className="flex items-center gap-1 sm:gap-2">
@@ -62,6 +63,7 @@ const Hero = () => {
                     <div className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 bg-green-500 rounded-full border border-white sm:border-2"></div>
                     <div className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 bg-purple-500 rounded-full border border-white sm:border-2"></div>
                   </div>
+
                   <span className="text-[8px] sm:text-[9px] md:text-xs text-gray-600">
                     30+ Learners
                   </span>
@@ -80,7 +82,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* CENTER HERO IMAGE - Fully Responsive */}
+        {/* CENTER HERO IMAGE */}
         <div className="relative z-20 flex items-center justify-center">
           <div className="relative group">
             <Image
@@ -93,7 +95,7 @@ const Hero = () => {
               quality={95}
             />
 
-            {/* Floating AI Indicators - Responsive Positioning */}
+            {/* Floating AI Indicators */}
             <div className="absolute top-2 right-2 sm:top-4 sm:right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 bg-white/95 backdrop-blur-sm rounded-lg sm:rounded-xl md:rounded-2xl p-1.5 sm:p-2 md:p-3 lg:p-4 xl:p-6 shadow-lg sm:shadow-xl animate-float">
               <div className="flex items-center gap-1 sm:gap-2 md:gap-3">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 bg-green-500 rounded-full animate-pulse"></div>
@@ -118,6 +120,7 @@ const Hero = () => {
                     d="M13 10V3L4 14h7v7l9-11h-7z"
                   />
                 </svg>
+
                 <span className="text-[8px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base font-medium text-gray-700">
                   Smart Learning
                 </span>
@@ -126,7 +129,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* RIGHT CORNER TEXT - Fully Responsive */}
+        {/* RIGHT CORNER TEXT */}
         <div className="absolute top-2 right-2 sm:top-4 sm:right-4 md:top-6 md:right-6 lg:top-12 lg:right-12 xl:top-16 xl:right-16 z-30 max-w-[140px] sm:max-w-[180px] md:max-w-xs lg:max-w-sm">
           <div className="bg-white/95 backdrop-blur-sm p-2 sm:p-3 md:p-4 lg:p-6 xl:p-8 rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg sm:shadow-xl md:shadow-2xl border border-gray-100">
             <div className="space-y-1 sm:space-y-2 md:space-y-3 lg:space-y-4">
@@ -135,6 +138,7 @@ const Hero = () => {
                 <span className="text-[8px] sm:text-[9px] md:text-xs font-medium text-purple-700">
                   Companion
                 </span>
+
                 <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 bg-purple-500 rounded-full animate-pulse"></div>
               </div>
 
@@ -168,10 +172,11 @@ const Hero = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"
+                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100 4m0 4a2 2 0 100 4m0-4v2m0-6V4"
                       />
                     </svg>
                   </div>
+
                   <span className="text-[8px] sm:text-[9px] md:text-xs font-medium text-gray-700">
                     Personalized
                   </span>
@@ -193,6 +198,7 @@ const Hero = () => {
                       />
                     </svg>
                   </div>
+
                   <span className="text-[8px] sm:text-[9px] md:text-xs font-medium text-gray-700">
                     Analytics
                   </span>
@@ -202,6 +208,7 @@ const Hero = () => {
                   <div className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-gray-900">
                     500+ Lessons
                   </div>
+
                   <div className="text-[8px] sm:text-[9px] md:text-xs text-gray-500">
                     Available Now
                   </div>
@@ -211,7 +218,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Progress Ring - Responsive Positioning */}
+        {/* Progress Ring */}
         <div className="absolute top-1/2 right-1 sm:right-2 md:right-4 lg:right-8 xl:right-24 2xl:right-32 transform -translate-y-1/2 bg-white rounded-full p-2 sm:p-3 md:p-4 lg:p-6 shadow-lg sm:shadow-xl md:shadow-2xl z-25">
           <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24">
             <svg
@@ -224,6 +231,7 @@ const Hero = () => {
                 stroke="#E5E7EB"
                 strokeWidth="3"
               />
+
               <path
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                 fill="none"
@@ -233,6 +241,7 @@ const Hero = () => {
                 className="animate-pulse"
               />
             </svg>
+
             <div className="absolute inset-0 flex items-center justify-center">
               <span className="text-[10px] sm:text-xs md:text-sm lg:text-base font-bold text-blue-600">
                 85%
@@ -241,16 +250,19 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Bottom Progress Indicator - Responsive */}
+        {/* Bottom Progress Indicator */}
         <div className="absolute bottom-12 sm:bottom-16 md:bottom-20 lg:bottom-24 left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur-sm rounded-full px-2 sm:px-3 md:px-4 lg:px-6 py-1 sm:py-1.5 md:py-2 lg:py-3 shadow-lg sm:shadow-xl z-30">
           <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
             <div className="flex items-center gap-1 sm:gap-2">
               <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-blue-500 rounded-full"></div>
+
               <span className="text-[8px] sm:text-[10px] md:text-xs lg:text-sm font-medium text-gray-700">
                 Learning Active
               </span>
             </div>
+
             <div className="w-px h-2 sm:h-3 md:h-4 bg-gray-300"></div>
+
             <div className="flex items-center gap-1 sm:gap-2">
               <svg
                 className="w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 text-green-500"
@@ -265,6 +277,7 @@ const Hero = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
+
               <span className="text-[8px] sm:text-[10px] md:text-xs lg:text-sm font-medium text-gray-700">
                 AI Ready
               </span>
@@ -272,7 +285,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator - Hidden on mobile */}
+        {/* Scroll Indicator */}
         <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce z-30 hidden md:block">
           <svg
             className="w-4 h-4 md:w-5 md:h-5 text-gray-400"
@@ -290,12 +303,18 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Mobile CTA Buttons - Fixed at bottom */}
+      {/* Mobile CTA Buttons */}
       <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 p-3 z-40 md:hidden">
         <div className="flex gap-2">
-          <button className="flex-1 bg-black text-white px-4 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-all duration-300 shadow-lg text-sm">
-            Launch Now
-          </button>
+          {/* Mobile Start Now Link */}
+          <a
+            href="/companions/new"
+            className="flex-1 bg-black text-white px-4 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-all duration-300 shadow-lg text-sm text-center"
+          >
+            Start Now
+          </a>
+
+          {/* Mobile Learn More */}
           <button className="flex-1 border border-black text-black px-4 py-2.5 rounded-lg font-medium hover:bg-black hover:text-white transition-all duration-300 text-sm">
             Learn More
           </button>
