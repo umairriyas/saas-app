@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.22.0",
+    "@clerk/nextjs": "^6.39.7",
     "@hookform/resolvers": "^5.1.1",
     "@jsmastery/utils": "^1.0.2",
     "@radix-ui/react-accordion": "^1.2.11",
@@ -23,7 +23,7 @@
     "framer-motion": "^12.23.0",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.515.0",
-    "next": "15.3.3",
+    "next": "^15.5.27",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.58.1",
